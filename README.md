@@ -22,9 +22,9 @@ website-clone/
 ├── index.html              # Main landing page
 ├── main.css             # Styles for Netflix layout
 ├── main.js              # JavaScript for Netflix page
-├── signup.html         # Signup form page
-├── signup.css          # Signup form styling
-├── signup.js           # JS for signup interactions
+├── signup/index.html         # Signup form page
+├── signup/signup.css          # Signup form styling
+├── signup/signup.js           # JS for signup interactions
 └── image/                  # Images and assets used in pages
 ```
 
