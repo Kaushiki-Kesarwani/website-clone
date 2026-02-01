@@ -20,13 +20,11 @@ It’s designed as a static frontend project — perfect for beginners to explor
 ```
 website-clone/
 ├── index.html              # Main landing page
-├── Netflix.html            # Netflix clone homepage
-├── Netflix.css             # Styles for Netflix layout
-├── Netflix.js              # JavaScript for Netflix page
-├── signuppage.html         # Signup form page
-├── signuppage.css          # Signup form styling
-├── signuppage.js           # JS for signup interactions
-├── another.css             # Additional or shared styles
+├── main.css             # Styles for Netflix layout
+├── main.js              # JavaScript for Netflix page
+├── signup.html         # Signup form page
+├── signup.css          # Signup form styling
+├── signup.js           # JS for signup interactions
 └── image/                  # Images and assets used in pages
 ```
 

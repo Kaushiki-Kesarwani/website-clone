@@ -23,6 +23,6 @@ plusBtns.forEach((btn, index) => {
 
 let btn =  document.querySelector(".button") ;
 btn.addEventListener("click",() => {
-  window.location.href = "signuppage.html";
+  window.location.href = "signup.html";
   
  });
