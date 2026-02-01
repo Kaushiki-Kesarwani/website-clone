@@ -5,15 +5,18 @@
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   background: linear-gradient(rgba(49, 0, 0, 0.9), #0a0a0a);
+  background-size: cover;
 }
 
 .navbar {
   width: 100%;
   height: auto;
-  padding: 1.5rem 1.4rem 1.6rem 10rem;
+  padding: 1.5rem 1.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .navbar img {
@@ -27,24 +30,27 @@
 }
 
 .user-input {
-  width: 40%;
-  min-height: 70vh;
+  width: 90%;
+  max-width: 480px;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 2.5rem auto;
   color: white;
-  padding: 2rem;
+  padding: 1.6rem;
+  background: rgba(0,0,0,0.12);
+  border-radius: 8px;
 }
 
 .box1 h2 {
   font-family: Helvetica, sans-serif;
-  font-size: 2rem;
-  font-weight: bolder;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 800;
 }
 
 .box1 p {
   font-family: Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
   color: #c4c4c4;
   margin: 0.6rem 0 1.3rem 0;
 }
@@ -58,19 +64,19 @@
 }
 
 .box2 {
-    width: 94%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
 .box2 input {
-  padding: 1.4rem 1rem 0.8rem 1rem;
-  background-color: rgba(29, 28, 28, 0.7);
+  padding: 1.2rem 1rem;
+  background-color: rgba(29, 28, 28, 0.85);
   color: white;
   border: 1px solid rgb(146, 139, 139);
   border-radius: 0.3rem;
-  width: 99%;
+  width: 100%;
   height: auto;
 }
 
@@ -86,36 +92,35 @@
 }
 
 .box2 button {
-  width: 99%;
+  width: 100%;
   height: auto;
-  padding: 1rem 1rem 1rem 1rem;
-  font-size: 1.1rem;
+  padding: 0.95rem 1rem;
+  font-size: 1.05rem;
   color: white;
-  font-weight: bolder;
+  font-weight: 700;
   background-color: #ce0d0d;
   border: none;
   border-radius: 0.3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 
 
 .para {
   font-family: Helvetica, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .p1 {
   color: #a5a5a5;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 
 .dropdown{
-     margin-bottom: 2.9rem;
-     display: flex;
-     flex-direction: column;
-     gap: 0.9rem;
-   
+  margin-bottom: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
 }
 
 .options{
@@ -124,11 +129,10 @@
 }
 
 .dropdown a {
-    color: rgb(250, 242, 226);
-    font-family:  Helvetica, sans-serif;
-    font-size: 0.8rem;
-    font-weight: bold;
-    
+  color: rgb(250, 242, 226);
+  font-family:  Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .dropdown.hide{
@@ -137,4 +141,23 @@
 
 .caret{
     cursor: pointer;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .navbar { padding: 1rem; }
+  .navbar img { width: 7.2rem; }
+  .user-input { width: 92%; max-width: 520px; padding: 1.2rem; margin: 1.8rem auto; }
+  .box1 h2 { font-size: 1.6rem; }
+  .box1 p { font-size: 1rem; }
+  .box2 input { padding: 1rem; }
+  .box2 button { padding: 0.9rem; }
+}
+
+@media (max-width: 420px) {
+  .navbar img { width: 6.2rem; }
+  .user-input { width: 95%; padding: 0.9rem; margin: 1rem auto; }
+  .box1 h2 { font-size: 1.4rem; }
+  .box1 p { font-size: 0.95rem; }
+  .box2 button { padding: 0.85rem; font-size: 1rem; }
 }
